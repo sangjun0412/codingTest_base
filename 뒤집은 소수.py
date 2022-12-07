@@ -25,5 +25,5 @@ def isPrime(x):
 for num in num_list:
     rn = reverse(num)
     if isPrime(rn) and rn != 1:
-        print(rn, end = ' ')
+        print(rn, end=' ')
 
