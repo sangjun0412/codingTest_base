@@ -9,8 +9,8 @@ while nl:
     if len(nl) == 1:
         nl.pop()
         cnt += 1
-    if nl == []:
         break
+        
     if nl[0] + nl[-1] > m:
         nl.pop(0)
         cnt += 1
