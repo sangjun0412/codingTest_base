@@ -10,7 +10,7 @@ while nl:
         nl.pop()
         cnt += 1
         break
-        
+
     if nl[0] + nl[-1] > m:
         nl.pop(0)
         cnt += 1
