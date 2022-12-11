@@ -18,8 +18,7 @@ for i in range(len(s1)):
     t2[s2[i]] += 1
     t1[s1[i]] += 1
 
-# print(t1.items())
-# print(t2.items())
+
 if t1.items() == t2.items():
     print("YES")
 else:
