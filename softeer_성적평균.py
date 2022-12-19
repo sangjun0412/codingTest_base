@@ -7,4 +7,5 @@ for _ in range(k):
     for i in range(s, e):
         tmp += nl[i]
     res = '{:.2f}'.format(round(tmp/(e - s), 2))
+    #포맷 방식으로 소수 밑에자리에 0으로 채우기.
     print(res)
