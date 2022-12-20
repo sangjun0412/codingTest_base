@@ -7,7 +7,6 @@ n, game = map(str, input().split())
 n = int(n)
 nl = list()
 
-
 for i in range(n):
     nl.append(input())
 
