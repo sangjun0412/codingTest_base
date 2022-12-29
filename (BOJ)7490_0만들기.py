@@ -32,6 +32,7 @@ for _ in range(tc):
         for j in range(1, n):
             tmp += str(j) + str(x[j - 1])
         tmp += str(n)
-        if eval(tmp.replace(' ', '')) == 0:
+        tmp = tmp.replace(' ', '')
+        if eval(tmp) == 0:
             print(tmp)
     print()
