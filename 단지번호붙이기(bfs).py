@@ -7,7 +7,6 @@ bfs or dfs 둘다 하면 될듯
 from collections import deque
 n = int(input())
 graph = [list(map(int, input())) for _ in range(n)]
-visit = [[0] * n for _ in range(n)]
 q = deque()
 
 dx = [0, 0, 1, -1]
