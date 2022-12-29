@@ -16,7 +16,6 @@ ch = [0 for i in range(n)]
 
 def dfs(start):
     ch[start] = 1
-
     for index, j in enumerate(graph[start]):
         if j == 1 and ch[index] == 0:
             ch[index] = 1
