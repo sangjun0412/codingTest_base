@@ -12,7 +12,7 @@ s = list(map(str, input()))
 t = list(map(str, input()))
 
 while len(s) != len(t):
-    if t[-1]=='A':
+    if t[-1] == 'A':
         t.pop()
     elif t[-1] == "B":
         t.pop()
