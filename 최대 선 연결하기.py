@@ -8,6 +8,7 @@
 n = int(list())
 nl = list(map(int, input().split()))
 dp = [0] * (n + 1)
+dp.insert(0,0)
 dp[1] = 1
 res = 0
 
