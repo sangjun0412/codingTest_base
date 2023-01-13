@@ -1,16 +1,12 @@
-import sys
-input = sys.stdin.readline
-arr = []
-dp = []
+n = int(input())
+nl = [int(input()) for _ in range(n)]
+dp = [0] *(n)
 
-l = int(input())
-for _ in range(l):
-    arr.append(int(input()))
-
-dp.append(arr[0])
-dp.append(max(arr[0]+arr[1],arr[1]))
-dp.append(max(arr[0]+arr[2],arr[1]+arr[2]))
-for i in range(3,l):
-    dp.append(max(dp[i-2] + arr[i] , dp[i-3] + arr[i] + arr[i - 1]))
-
-print(dp.pop())
+if len(nl)<=2:
+    print(sum(nl))
+else:
+    dp[0] = nl[0]
+    dp[1] = nl[0] + nl[1]
+    for i in range(2, n):
+        dp[i] = max(dp[i - 3] +nl[i - 1] + nl[i],dp[i-2] + nl[i])
+    print(dp[-1])
