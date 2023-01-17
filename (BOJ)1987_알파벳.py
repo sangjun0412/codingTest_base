@@ -19,7 +19,7 @@ def BFS(x, y):
     q = set([(x, y, board[x][y])])
     while q:
         x, y, ans = q.pop()
-
+        #print(q)를 해보면 dfs형식인데 bfs로 하는 걸 볼 수 있음
         for i in range(4):
             nx = x + dx[i]
             ny = y + dy[i]
