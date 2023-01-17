@@ -38,7 +38,7 @@ def main():
             if directory in ["백준", "프로그래머스"]:
                 content += "## 📚 {}\n".format(directory)
             else:
-                content += "### 🚀 {}\n".format(directory)
+                content += "### ✍️ {}\n".format(directory)
                 content += "| 문제번호 | 링크 |\n"
                 content += "| ----- | ----- |\n"
             directories.append(directory)
