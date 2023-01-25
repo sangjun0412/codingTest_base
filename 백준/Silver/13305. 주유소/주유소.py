@@ -5,6 +5,9 @@ oil.pop()
 i = 0
 min_oil = 214700000
 res = 0
+if max(oil) == 1:
+    print(sum(road))
+    exit()
 while True:
     if i == len(road):
         break
